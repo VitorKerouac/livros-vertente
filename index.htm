@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATÁLOGO BLOG VERTENTE</title>
+    <style>
+        /* Configurações básicas da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* O container principal do catálogo */
+        .catalogo-container {
+            width: 100%; /* Ocupa toda a largura disponível della tela */
+            /* MÁGICA DO GRID FLUIDO: Calcula sozinho quantas colunas cabem na tela */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px; /* Espaço sutil entre os blocos de livros */
+        }
+
+        /* Configuração de cada bloco de livro individual */
+        .livro-item {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            line-height: 1.2;
+            box-sizing: border-box;
+            font-size: 0.8rem;
+        }
+
+        /* Remove o sublinhado padrão de links e mantém o texto preto */
+        .livro-item a {
+            text-decoration: none;
+            color: #000000;
+            display: block; /* Faz o bloco inteiro do link ser clicável */
+            height: 100%;
+        }
+
+        /* Redimensiona as imagens perfeitamente dentro de sua respectiva coluna */
+        .livro-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- O container envolve todos os livros e ajusta as colunas dinamicamente -->
+    <div class="catalogo-container">
+        
+        <!-- Livro 1: OS VAGABUNDOS ILUMINADOS -->
+<div class="livro-item">
+    <a href="https://amzn.to/47UHvpw" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyOrgYzMYVgTT1vGLcKS33WOnVt5ql1i0fJ5EjIfRzUqjlu1bQAldcYd1CowFUjLTBL-MLhDND-2eAK8vqExn8Ccd1aTdxoAwwme8Yvg9xuO0aUE5XR9Z2mzfSztkQ2h1JdZc1bCJHS_Mj32LFtFUHqetK2_3T1bqWM-AQx3GyjYruEdVpdTN2TxYz3UNL/s1200/capa_01_A.jpg" alt="Imagem da capa">
+        <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+        <strong style="display: inline-block; margin-bottom: 4px;">Os Vagabundos Iluminados</strong>
+        Jack Kerouac
+    </a>
+</div>
+
+        <!-- Livro 2: ENTERREM MEU CORAÇÃO NA CURVA DO RIO -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4mpi1q8" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQXhyphenhyphenOeaHmDbun-Fr4rOJTBVgaTZotq1PDVQhXAoIry06nf5ZrdDlAxAnk7-DJCV2F5ayBUWajkaKQlvQv3z09IxZMhK0ksbB63hakt7PVu_Md4iO-N0HWjxX_afZ0m3k7iXuhraJZO2F_swEGUSqRpBBAgOkFe_A2JXGzAQowV0P1fm4fZKylFjQXaPJY/s1200/capa_02_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Enterrem Meu Coração na Curva do Rio</strong><br>
+                Dee Brown
+            </a>
+        </div>
+
+        <!-- Livro 3: NA NATUREZA SELVAGEM -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4sHIhOo" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFCZqrMGv-2LNoWjxDl53Y6RPoPA9wOKIQQbeHeTLxW-jbDBeRRb8NSQnj8Z1EDueC9pVLBvSKFnZ-L1aiR5A1xWSbNS9uvE4OjZiY0w3HBuqLEvA3jGHcsMEJ_pQz5u-eTxiGdvWmBkZGe8aVqpXv8TmK0lAZ5XiIQ28OEEoMTIQ3_1laQJ_bOC-8fCYw/s1200/capa_03_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Na Natureza Selvagem</strong><br>
+                Jon Krakauer
+            </a>
+        </div>
+
+        <!-- Livro 4: NO AR REREFEITO -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4dS0CEC" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9vQ96F5f234Y5ZSZte0gcQ-ylRpDZ1A20LV61J0egBhWM1641UULAZFAkrCTHS4JJhwt3WTGfPVyTwcAAkUelQPX5Mh-1afIkYfMGQAha9X5ssFkMtTbMCqHtc3pKgpgdPXzfbq_QbyqUvDhCVyN3-7OA24ro31Yq_ufMWgvMfV6zmzI-p76h2F1h6Mly/s1200/capa_04_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">No Ar Rarefeito</strong><br>
+                Jon Krakauer
+            </a>
+        </div>
+
+        <!-- Livro 5: O GOVERNO OCULTO DO MUNDO: CRÔNICAS DO REALISMO FANTÁSTICO -->
+        <div class="livro-item">
+            <a href="https://amzn.to/42i0CGF" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNWwZE1gKB4m2ewZirP3JqNBnQSVuhaRi6B5lFzKHCzlkRhwANS7MlEFgDjqdMBnmtNPG3I1UyadRPMBL6STw1VFHvr59ihTEw01N2HKm9eVhohccpZAu3pkJkxRIGs67atildFepDQJuXu5cAtmlGR8IEcva5A6i2ZY_z1btzcKBW637Es9yjvJP3VqW-/s1200/capa_05_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">O Governo Oculto do Mundo: Crônicas do Realismo Fantástico</strong><br>
+                Vitor Souza
+            </a>
+        </div>
+
+        <!-- Livro 6: FLORILÉGIO -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4cgwDF3" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfjrPaGtXxgCZskzpJSxD3U2jyPKlxNlIG4H0w6CjOKudygq5r2p1jkwGq8sJVgdV1WWIlKeoo7XpZfaqSUvsEFFUFe_nbhGSi9ogxoPn9z5hHV8k7QyMyFjwobG4zoPwWa-23TqR-DP72qODqqQqV0iS3oKynvisVZr_d-Y8RcuBXhuBUVsiYxwauGtVk/s1200/capa_06_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Florilégio</strong><br>
+                Vitor Souza
+            </a>
+        </div>
+
+        <!-- Livro 7: NOVO MUNDO EM CHAMAS -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4u3223E" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTWdxulu1uTJI6J86TqPiuTrO8QonwpubKWErXpn5ErTOLqDE7sWsEa5ogEK68Ai3D8Dnt_l_yDVCXrnGzC5DkTdAbrxe5CRRlhNoR49yeMic33ZVD3o-7r6rP6sQARULQqbDqTvlpiBrS1nMrCTNh8SxK-2FXxM3NOQePa1anyR8ZcaYP-E-u__vystbw/s1200/capa_07_A.jpg" alt="Imagem da capa">
+        <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+        <strong style="display: inline-block; margin-bottom: 4px;">Novo Mundo em Chamas</strong><br>
+                Viktor Waewell
+            </a>
+        </div>
+
+
+ <!-- Livro 8: CONTRAPONTOS: UMA BIOGRAFIA DE AUGUSTO LICKS -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4cLwqtU" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT3elEjh9w96H7Gp2Q1GCnkdw7O-ak-appO4YBVzLpdQg4U0hfw17sA2205Yne9W62DZdvoAkZ7tjz3PLn5twaGG6j3TytBW9aN_vOSCYqPTbXJM29OuFy4wHq9hYuLpghemReGAFc0HgmFoEWf8y6sN4Oh02E3aGMDfqkWm8QWTJOAgUpWGZfImEHGhwe/s1200/capa_08_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Contrapontos: Uma Biografia de Augusto Licks</strong><br>
+                Fabrício Mazocco, Silvia Remanso
+            </a>
+        </div>
+
+
+ <!-- Livro 9: FOLIAS DE APRENDIZ -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4ekr361" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnTWcV3k2nz2Ewbzg_bqw-SUlfWr4o5dTO6b4ulbCcrxM2pCXK-Vef61mg1jxtHQPfhnAEfdlh9ffack8epYdKZZOoF2vah_vbgWxyu7KkDFdVuxzR333ABhyphenhypheniap3Gpmggm2PbQTCOAUr8nl6tU5VevHCChkuTVJo-QdK5gTM-yZ9dCV4r32_Db6JetaNz/s1200/capa_09_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Folias de Aprendiz</strong><br>
+                Geraldo Carneiro
+            </a>
+        </div>
+
+
+ <!-- Livro 10: IMPERATRIZ NO FIM DO MUNDO: MEMÓRIAS DÚBIAS DE AMÉLIA DE LEUCHTEMBERG -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4eOjDs4" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZeA7V_iad2TOBYWMTYka_kdDPNr6EyjAwOdE9fsMOlBDO7yjM5wXC7ANnXq_TAyM9-BD7bHEBe9pGwntohCFoiWBj9rkGoLneyOzgsCRlyorluf4yHZDe5tsfS_sLFPhiMJSfqA5jIY1fm9UR3kU9wHxzuBchyphenhyphenV6NNSb_SLcThRA4h4Zz7dSPOSJN6GO9/s1200/capa_10_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Imperatriz no Fim do Mundo: Memórias Dúbias de Amélia de Leuchtemberg</strong><br>
+                Ivanir Calado
+            </a>
+        </div>
+
+
+ <!-- Livro 11: O DESPERTAR DO UNIVERSO CONSCIENTE: UM MANIFESTO PARA O FUTURO DA HUMANIDADE -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4tN4v1Y" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoEW6-0rzBYM1d2xqFV_qOl8aFS_BYucrwhfp90ZZbaYO4kvHYTcVOkWn0InxEvkeC9KLOjTTzy3hWQ2LtWaVs3STFqO18GSIO0xlTkWqaAtIL4c7PeP7TSTb_FFMTvNEtsf6Ep-QDNwhD4WTYqtf6K9cI_8ALJ-s9Xk-6u_crg9oWVTFahWuTDgirFVR3/s1200/capa_11_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">O Despertar do Universo Consciente: Um Manifesto para o Futuro da Humanidade</strong><br>
+                Marcelo Gleiser
+            </a>
+        </div>
+
+
+ <!-- Livro 12: O GÊNIO DO CRIME -->
+        <div class="livro-item">
+            <a href="https://amzn.to/49rubty" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjRVNgMR7GxUzFVLIHuhjnweEHftF2L0Flei3Xp6KD0k0VWEdjrj2G-ak0QiNgqiY3-NQBd-uT50hmTc1Hi8-xS443_19nMdl6goU-YAs7UpkcavuM08ENvV6GYr4FBNiKCItaCbL0-9PH2Pn5c0YsdHWJzzMxxTFdWarBe-MvHTo5wnTYddTwO5vW3lwm/s1200/capa_12_A.jpg" alt="CImagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">O Gênio do Crime</strong><br>
+                J. C. Marinho Silva
+            </a>
+        </div>
+
+
+ <!-- Livro 13: MÊS DE CAẼS DANADOS -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4xexcI4" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh6yncDpZ3bEPU2rf8nd8nQol4im1yWICCTzvcddzgKe2ROGrnK5xtkLhOdkYpoD9l-B-2hH3feQ4AY7pFqgTP3zd9AqhQAgEgXw2BZXtPEb-Uz8OP7kSVzf3Nke37jCs5hKr5dkjKGcvCSbCS0FPovpUVQuorvAq8z5xxMk9lXoLEX3V1YSU2t0A9YDPM/s1200/capa_13_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Mês de Cães Danados</strong><br>
+                Moacyr Scliar
+            </a>
+        </div>
+
+
+ <!-- Livro 14: NOTAS DE UM VELHO SAFADO -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4e2Y1HA" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4Yqp-sV-MFvkXsEJgJ38L5x4lzY-yGZZ-JpypGCMCZRkiZh32sgqkFYgrYZKAH8aMg0ROO_RzQhpcCRfOl3NTksV2qplPXdJSnM7DknXFWoByU2ZoZxkIyOHIehwaPdxmMpKK_Wr3Rg6KDTmYsSE_o-Mg_9RLssT5Yvl9w_XmmVG2uF487VNtDrkrWQEZ/s1200/capa_14_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Notas de Um Velho Safado</strong><br>
+                Charles Bukowski
+            </a>
+        </div>
+
+
+ <!-- Livro 15: O CHEIRO DO RALO -->
+        <div class="livro-item">
+            <a href="https://amzn.to/4a5yawm" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3g45yS6Gv1pzlwNAe-LuDJRyG8DPvb-Xyj-2uegjvejyeXjqfGeSmYlfL5hIOIlk8DjDP2uMkTy_46mGvhg2dHNOKJN-kT5JtgMvh9m5pQSZ8iCOeyVGIvo3Bkw0ECltM131AB-86dvXRvyL8iNtdz32jip8RAbOKg1a8zGLJ1TuSVdwzBCDMO6AZnQB6/s1200/capa_15_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">O Cheiro do Ralo</strong><br>
+                Lourenço Mutarelli
+            </a>
+        </div>
+
+
+ <!-- Livro 16: ESTORVO -->
+        <div class="livro-item">
+            <a href="https://link.amazon/B0dmjTeyZ" target="_blank">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKvEIavccDY9wBKHuZKjbj_5IjdJ4Y3I1VwpNU1wYslXAII7mPdKHJ5VhwCxLSWk8DcqOJkY5pATdqMYcGVQdIR61y0Gi78Wk43ShXelS4Ot2JvShMOqW5wku4IapXMUG6-UZoTZPDgS82ZlIXe-NCJ0f0xrfmB4Kg9UZ5O8ReElLw_ISRP4bVoObLqEHb/s1200/capa_16_A.jpg" alt="Imagem da capa">
+         <!-- O style abaixo faz a quebra de linha automática e empurra o autor exatamente 8 pixels para baixo -->
+         <strong style="display: inline-block; margin-bottom: 4px;">Estorvo</strong><br>
+                Chico Buarque
+            </a>
+        </div>
+
+ 
+
+
+
+    </div>
+
+</body>
+</html>
